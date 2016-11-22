@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Exec=~/bin/synaptics-touchpad-thinkpad-carbon-x1-2nd.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_AU]=Touchpad Settings
+Name=Touchpad Settings
+Comment[en_AU]=Custom Synaptics Touchpad Settings for the Thinkpad Carbon X1 2nd
+Comment=Custom Synaptics Touchpad Settings for the Thinkpad Carbon X1 2nd
+
