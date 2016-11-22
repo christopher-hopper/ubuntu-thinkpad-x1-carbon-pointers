@@ -20,7 +20,13 @@ There are two options for configuring the touchpad.
 2. Use a custom X11/xorg configuration loaded on login
 
     ```sh
+    # Create required directory paths.
     [[ -d ~/.local/share/X11/xorg ]] || mkdir --parents ~/.local/share/X11/xorg
+
+    # Copy configuration to home.
     cp ./X11/xorg/synaptics-touchpad.conf ~/.local/share/X11/xorg/
+
+    # Soft link configuration to system location.
+    # Note: Use the file name to change the load order.
     sudo ln -s ~/.local/share/X11/xorg/synaptics-touchpad.conf /usr/local/share/X11/xorg/60-synaptics-touchpad.conf
     ```
