@@ -1,7 +1,9 @@
 Installation
 ------------
 
-There are two options for configuring the touchpad.
+There are two options for configuring the Thinkpad X1 Carbon's screen is 
+Carbon's pointing device such as touchpad, touchscreen and mouse on Debian 
+based Linux distributions.
 
 1. Use xinput settings executed after login by Unity Dash
     
@@ -17,6 +19,7 @@ There are two options for configuring the touchpad.
     # Copy desktop autostart config to home.
     cp ./autostart/*.desktop ~/.config/autostart/
     ```
+
 2. Use a custom X11/xorg configuration loaded on login
 
     ```sh
@@ -28,5 +31,16 @@ There are two options for configuring the touchpad.
 
     # Soft link configuration to system location.
     # Note: Use the file name to change the load order.
-    sudo ln -s ~/.local/share/X11/xorg/synaptics-touchpad.conf /usr/local/share/X11/xorg/60-synaptics-touchpad.conf
+    sudo ln -s ~/.local/share/X11/xorg/synaptics-touchpad.conf \
+	/usr/local/share/X11/xorg/60-synaptics-touchpad.conf
     ```
+
+License
+-------
+
+Copyright (c) Christopher Hopper 2016
+
+Distributed under the MIT License. 
+
+See the included [LICENSE](LICENSE) for complete terms.
+
