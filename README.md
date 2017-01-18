@@ -50,8 +50,24 @@ xinput list
 xinput list-prop $ID
 ```
 
-After changing properties using the configuration files installed above you will
-need to log out and log in again before they take effect.
+> **Important Tip**  
+> After changing properties using the configuration files installed above you
+> will need to log out and log in again before they take effect.
+
+### Pointer Co-ordinates
+
+You can query the pointer co-ordinates in real time using tools like `xdotool`.
+Once installed it can be used to watch the pointer location, reporting exact
+co-ordinates, which can help in tweaking the X,Y co-ordinates for any property
+you wish to set.
+
+```sh
+# Install xdotool.
+sudo apt-get install xdotool
+
+# Watch pointer location in real-time.
+watch xdotool getmouselocation
+```
 
 License
 -------
