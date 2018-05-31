@@ -32,7 +32,7 @@ Linux distributions.
     # Soft link configuration to system location.
     # Note: Use the file name to change the load order.
     sudo ln -s ~/.local/share/X11/xorg/synaptics-touchpad.conf \
-	/usr/local/share/X11/xorg/60-synaptics-touchpad.conf
+	/usr/share/X11/xorg.conf.d/60-synaptics-touchpad.conf
     ```
 
 Testing
